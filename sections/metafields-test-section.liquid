@@ -1,5 +1,7 @@
 <div class="page-width metafields-test-section">
-  12345
+  {% if page.metafields.global.single_line_subtitle.value %}
+    {{ page.metafields.global.single_line_subtitle.value }}
+  {% endif %}
 </div>
 
 {% schema %}
