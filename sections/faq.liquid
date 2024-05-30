@@ -4,8 +4,20 @@
 {% schema %}
 {
   "name": "FAQ",
-  "class": "section",
   "settings": [
+  ],
+  "blocks": [
+    {
+      "type": "category",
+      "name": "Category",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Category title"
+        }
+      ]
+    }
   ],
   "presets": [
     {
