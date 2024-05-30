@@ -2,6 +2,17 @@
   "sections": {
     "main": {
       "type": "faq",
+      "blocks": {
+        "category_DUNVq8": {
+          "type": "category",
+          "settings": {
+            "title": "General"
+          }
+        }
+      },
+      "block_order": [
+        "category_DUNVq8"
+      ],
       "settings": {
       }
     }
