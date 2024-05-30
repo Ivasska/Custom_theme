@@ -8,10 +8,24 @@
           "settings": {
             "title": "General"
           }
+        },
+        "category_NpwFkR": {
+          "type": "category",
+          "settings": {
+            "title": "Shipping"
+          }
+        },
+        "category_PbEiXJ": {
+          "type": "category",
+          "settings": {
+            "title": "Returns"
+          }
         }
       },
       "block_order": [
-        "category_DUNVq8"
+        "category_DUNVq8",
+        "category_NpwFkR",
+        "category_PbEiXJ"
       ],
       "settings": {
       }
