@@ -48,6 +48,13 @@
             "title": "What's your return policy?",
             "body": "<p>They are made in a factory. They are made in a factory. They are made in a factory. They are made in a factory.<\/p><p>They are made in a factory. They are made in a factory. They are made in a factory. They are made in a factory.<\/p>"
           }
+        },
+        "question_GcpeN9": {
+          "type": "question",
+          "settings": {
+            "title": "your product is damaged, what shoul i do?",
+            "body": "<p>They are made in a factory. They are made in a factory. They are made in a factory. They are made in a factory.<\/p><p>They are made in a factory. They are made in a factory. They are made in a factory. They are made in a factory.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -57,7 +64,8 @@
         "category_NpwFkR",
         "question_URxP9W",
         "category_PbEiXJ",
-        "question_cP9V3b"
+        "question_cP9V3b",
+        "question_GcpeN9"
       ],
       "settings": {
       }
