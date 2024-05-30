@@ -9,18 +9,6 @@
             "title": "General"
           }
         },
-        "category_NpwFkR": {
-          "type": "category",
-          "settings": {
-            "title": "Shipping"
-          }
-        },
-        "category_PbEiXJ": {
-          "type": "category",
-          "settings": {
-            "title": "Returns"
-          }
-        },
         "question_EwXR3n": {
           "type": "question",
           "settings": {
@@ -34,14 +22,34 @@
             "title": "Does your product come in blue?",
             "body": "<p>They are made in a factory. They are made in a factory. They are made in a factory. They are made in a factory.<\/p><p>They are made in a factory. They are made in a factory. They are made in a factory. They are made in a factory.<\/p>"
           }
+        },
+        "category_NpwFkR": {
+          "type": "category",
+          "settings": {
+            "title": "Shipping"
+          }
+        },
+        "category_PbEiXJ": {
+          "type": "category",
+          "settings": {
+            "title": "Returns"
+          }
+        },
+        "question_URxP9W": {
+          "type": "question",
+          "settings": {
+            "title": "Do you ship to Asia?",
+            "body": "<p>They are made in a factory. They are made in a factory. They are made in a factory. They are made in a factory.<\/p><p>They are made in a factory. They are made in a factory. They are made in a factory. They are made in a factory.<\/p>"
+          }
         }
       },
       "block_order": [
         "category_DUNVq8",
+        "question_EwXR3n",
+        "question_mtPY6f",
         "category_NpwFkR",
         "category_PbEiXJ",
-        "question_EwXR3n",
-        "question_mtPY6f"
+        "question_URxP9W"
       ],
       "settings": {
       }
