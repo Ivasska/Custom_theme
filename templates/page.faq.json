@@ -27,13 +27,21 @@
             "title": "How are your product made?",
             "body": "<p>They are made in a factory. They are made in a factory. They are made in a factory. They are made in a factory.<\/p><p>They are made in a factory. They are made in a factory. They are made in a factory. They are made in a factory.<\/p><p><\/p>"
           }
+        },
+        "question_mtPY6f": {
+          "type": "question",
+          "settings": {
+            "title": "Does your product come in blue?",
+            "body": "<p>They are made in a factory. They are made in a factory. They are made in a factory. They are made in a factory.<\/p><p>They are made in a factory. They are made in a factory. They are made in a factory. They are made in a factory.<\/p>"
+          }
         }
       },
       "block_order": [
         "category_DUNVq8",
         "category_NpwFkR",
         "category_PbEiXJ",
-        "question_EwXR3n"
+        "question_EwXR3n",
+        "question_mtPY6f"
       ],
       "settings": {
       }
