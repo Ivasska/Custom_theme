@@ -18,7 +18,8 @@
 
 {% if section.settings.products_enable %}
   {% assign product = section.settings.product %}
-
+  
+  <div class="page-width">
   <div class="section-blocks {{ section.id }}">
     <h2>{{ my_variable }}</h2>
   <div class="section-blocks__row">
@@ -34,7 +35,8 @@
         %}
     {%- endfor -%}
   </div>
-</div>
+  </div>
+  </div>
 {% endif %}
 
 
