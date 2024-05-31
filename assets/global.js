@@ -1359,3 +1359,15 @@ class AccountIcon extends HTMLElement {
 }
 
 customElements.define('account-icon', AccountIcon);
+
+
+
+// ------- for FAQ page ------
+
+const questionHeaders = document.querySelectorAll('.faq-page-question-header');
+
+questionHeaders.forEach((header) => {
+  header.addEventListener('click', () => {
+    header.parentElement.classList.toggle("active");
+  });
+});

@@ -1,0 +1,178 @@
+{{ 'section-blocks.css' | asset_url | stylesheet_tag }}
+<noscript>{{ 'section-blocks.css' | asset_url | stylesheet_tag }}</noscript>
+
+{%  comment  %} variable {% endcomment %}
+{%- liquid
+  assign my_variable = "Цє моя змінна blocks" 
+-%}
+
+
+{%  comment  %} style - відображається в коді секції {% endcomment %}
+{%- style -%}
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    }
+{%- endstyle -%}
+
+
+{% if section.settings.products_enable %}
+  {% assign product = section.settings.product %}
+
+  <div class="section-blocks {{ section.id }}">
+    <h2>{{ my_variable }}</h2>
+  <div class="section-blocks__row">
+    {%- for block in section.blocks -%}
+      {%- assign product = all_products[block.settings.product] -%}
+        {% render 'card-product',
+          card_product: product,
+          media_aspect_ratio: section.settings.image_ratio,
+          image_shape: section.settings.image_shape,
+          show_secondary_image: section.settings.show_secondary_image,
+          show_vendor: section.settings.show_vendor,
+          show_rating: section.settings.show_rating
+        %}
+    {%- endfor -%}
+  </div>
+</div>
+{% endif %}
+
+
+{% schema %}
+  {
+    "name": "Рекомендовані продукти",
+    "tag": "section",
+    "class": "section--test",
+    "max_blocks": 4,
+    "disabled_on": {
+        "groups": ["header", "footer"]
+    },
+    "settings": [
+      {
+      "type": "checkbox",
+      "id": "products_enable",
+      "label": "Show related products",
+      "default": true
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "padding_top",
+        "default": 40
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "padding_bottom",
+        "default": 40
+       },
+       
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.related-products.settings.image_ratio.options__1.label"
+        },
+        {
+          "value": "portrait",
+          "label": "t:sections.related-products.settings.image_ratio.options__2.label"
+        },
+        {
+          "value": "square",
+          "label": "t:sections.related-products.settings.image_ratio.options__3.label"
+        }
+      ],
+      "default": "adapt",
+      "label": "t:sections.related-products.settings.image_ratio.label"
+    },
+    {
+      "type": "select",
+      "id": "image_shape",
+      "options": [
+        {
+          "value": "default",
+          "label": "t:sections.all.image_shape.options__1.label"
+        },
+        {
+          "value": "arch",
+          "label": "t:sections.all.image_shape.options__2.label"
+        },
+        {
+          "value": "blob",
+          "label": "t:sections.all.image_shape.options__3.label"
+        },
+        {
+          "value": "chevronleft",
+          "label": "t:sections.all.image_shape.options__4.label"
+        },
+        {
+          "value": "chevronright",
+          "label": "t:sections.all.image_shape.options__5.label"
+        },
+        {
+          "value": "diamond",
+          "label": "t:sections.all.image_shape.options__6.label"
+        },
+        {
+          "value": "parallelogram",
+          "label": "t:sections.all.image_shape.options__7.label"
+        },
+        {
+          "value": "round",
+          "label": "t:sections.all.image_shape.options__8.label"
+        }
+      ],
+        "default": "default",
+        "label": "t:sections.all.image_shape.label",
+        "info": "t:sections.all.image_shape.info"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_secondary_image",
+        "default": false,
+        "label": "t:sections.related-products.settings.show_secondary_image.label"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_vendor",
+        "default": false,
+        "label": "t:sections.related-products.settings.show_vendor.label"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_rating",
+        "default": false,
+        "label": "t:sections.related-products.settings.show_rating.label",
+        "info": "t:sections.related-products.settings.show_rating.info"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "product",
+        "name": "Рекомендовані продукти",
+          "settings": [      
+          {
+            "type": "product",
+            "id": "product",
+            "label": "Виберіть продукт"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Рекомендовані продукти"
+      }
+    ]
+  }
+{% endschema %}
