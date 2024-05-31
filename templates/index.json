@@ -322,6 +322,44 @@
       "settings": {
         "get_image_v_1": "shopify:\/\/shop_images\/woman-playing-with-blonde-hair.jpg"
       }
+    },
+    "section_blocks_3jyQcQ": {
+      "type": "section-blocks",
+      "blocks": {
+        "product_U3xcPj": {
+          "type": "product",
+          "settings": {
+            "product": "kids-sunglasses"
+          }
+        },
+        "product_zUpmjN": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_EUtfUi": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_U3xcPj",
+        "product_zUpmjN",
+        "product_EUtfUi"
+      ],
+      "settings": {
+        "products_enable": true,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false
+      }
     }
   },
   "order": [
@@ -333,6 +371,7 @@
     "multicolumn",
     "section_slider_products_BfHRef",
     "section_slider_products_nhFQw3",
-    "image_get_links_YzWiGi"
+    "image_get_links_YzWiGi",
+    "section_blocks_3jyQcQ"
   ]
 }
