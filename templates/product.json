@@ -97,6 +97,12 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "custom_liquid_gfmbb4": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<ul class=\"list list-payment\" role=\"list\">\n              {%- for type in shop.enabled_payment_types -%}\n                <li class=\"list-payment__item\">\n                  {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}\n                <\/li>\n              {%- endfor -%}\n            <\/ul>"
+          }
         }
       },
       "block_order": [
@@ -112,7 +118,8 @@
         "collapsible-row-1",
         "collapsible-row-2",
         "collapsible-row-3",
-        "share"
+        "share",
+        "custom_liquid_gfmbb4"
       ],
       "settings": {
         "enable_sticky_info": true,
