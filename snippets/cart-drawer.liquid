@@ -70,6 +70,11 @@
           {% render 'icon-close' %}
         </button>
       </div>
+
+      {% comment %} custon code {% endcomment %}
+      {% render 'cart-progress-bar-custom' %}
+      {% comment %} end custon code {% endcomment %}
+
       <cart-drawer-items
         {% if cart == empty %}
           class=" is-empty"
