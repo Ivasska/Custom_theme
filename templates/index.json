@@ -410,7 +410,7 @@
         "padding_bottom": 40,
         "image_ratio": "adapt",
         "image_shape": "default",
-        "show_secondary_image": false,
+        "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false
       }
