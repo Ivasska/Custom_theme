@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "image_banner": {
@@ -360,6 +369,51 @@
         "show_vendor": false,
         "show_rating": false
       }
+    },
+    "section_blocks_QKtCUh": {
+      "type": "section-blocks",
+      "blocks": {
+        "product_8w9ADw": {
+          "type": "product",
+          "settings": {
+            "product": "kids-sunglasses"
+          }
+        },
+        "product_JhJk9C": {
+          "type": "product",
+          "settings": {
+            "product": "kids-sunglasses-2"
+          }
+        },
+        "product_MNVNGn": {
+          "type": "product",
+          "settings": {
+            "product": "kids-sunglasses-3"
+          }
+        },
+        "product_HmUAjd": {
+          "type": "product",
+          "settings": {
+            "product": "kids-sunglasses-2"
+          }
+        }
+      },
+      "block_order": [
+        "product_8w9ADw",
+        "product_JhJk9C",
+        "product_MNVNGn",
+        "product_HmUAjd"
+      ],
+      "settings": {
+        "products_enable": true,
+        "padding_top": 100,
+        "padding_bottom": 40,
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false
+      }
     }
   },
   "order": [
@@ -372,6 +426,7 @@
     "section_slider_products_BfHRef",
     "section_slider_products_nhFQw3",
     "image_get_links_YzWiGi",
-    "section_blocks_3jyQcQ"
+    "section_blocks_3jyQcQ",
+    "section_blocks_QKtCUh"
   ]
 }
